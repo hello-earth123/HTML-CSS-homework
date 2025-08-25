@@ -1,0 +1,21 @@
+h2 {
+  font-weight: bold;
+  font-size: 22px;
+  color: darkviolet !important;
+}
+
+p {
+  color: orange;
+}
+
+.blue {
+  color: blue;
+}
+
+.green {
+  color: green;
+}
+
+#red {
+  color: red;
+}
