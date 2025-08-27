@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <title>Document</title>
+  <style>
+    header {
+      height: 700px;
+      background-image: url(images/header.jpg);
+      background-size: cover;  /* 이미지가 요소에 꽉 차게 표시 */
+    }
+  </style>
+</head>
+<body>
+  <!-- nav 컴포넌트 -->
+  <!-- 
+    d-flex: flex 컨테이너
+    justify-content-between: 로고와 메뉴를 양 끝으로 배치
+    align-items-center: 수직 중앙 정렬
+    fixed-top: 화면 최상단에 고정
+    bg-dark: 어두운 배경색
+  -->
+  <nav class="d-flex justify-content-between align-items-center fixed-top bg-dark">
+    <a href="#">
+      <img src="images/logo.png" alt="logo" height="80px">
+    </a>
+    <!-- 
+      list-unstyled: 기본 리스트 스타일 제거
+      mb-0: ul 태그 기본 아래 마진 제거
+      text-decoration-none: 리스트 각 항목 밑줄 제거
+    -->
+    <ul class="d-flex list-unstyled mb-0">
+      <li class="me-4"><a href="#" class="text-white text-decoration-none">Home</a></li>
+      <li class="me-4"><a href="#" class="text-white text-decoration-none">Community</a></li>
+      <li class="me-4"><a href="#" class="text-white text-decoration-none">Login</a></li>
+    </ul>
+  </nav>
+
+  <!-- header 컴포넌트 -->
+  <!-- 
+    flex-column: flex 수직 정렬
+    justify-content-center, align-items-center: 수직/수평 모두 가운데 정렬
+    display-2: 크기 4.5rem
+  -->
+  <header class="d-flex flex-column justify-content-center align-items-center">
+    <div class="display-2 text-white fw-bold">Cinema</div>
+    <div class="display-2 text-white fw-bold">Community</div>
+    <!-- 버튼 -->
+    <!-- 
+      btn-primary: 파란색 버튼
+      btn-lg: 큰 버튼
+    -->
+    <a class="btn btn-primary btn-lg mt-5" href="#">Let's Go</a>
+  </header>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
