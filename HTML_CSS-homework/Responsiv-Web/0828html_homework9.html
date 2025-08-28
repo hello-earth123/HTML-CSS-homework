@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <h1>도서 구매 서비스</h1>
+
+    <!-- grid 시스템 -->
+    <!-- 
+      row: 그리드 시스템의 시작 선언
+      g-4: 그리드 아이템 간 수평/수직 간격
+    -->
+    <div class="row g-4">
+      <!--
+        col-12: ~767px에서 각 카드가 12칸 차지
+        col-md-6: 768~991px에서 각 카드가 6칸 차지 (2개씩 배치)
+        col-lg-4: 992px 이상에서 각 카드가 4칸 (3개씩 배치)
+      -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card p-3">
+          <img src="book1.jpg" alt="book-img">
+          <div class="card-body">
+            <h5 class="card-title">책 제목 1</h5>
+            <p class="card-text">책 설명이 여기에 들어갑니다.</p>
+            <a href="#" class="btn btn-primary">구매하기</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card p-3">
+          <img src="book1.jpg" alt="book-img">
+          <div class="card-body">
+            <h5 class="card-title">책 제목 2</h5>
+            <p class="card-text">책 설명이 여기에 들어갑니다.</p>
+            <a href="#" class="btn btn-primary">구매하기</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card p-3">
+          <img src="book1.jpg" alt="book-img">
+          <div class="card-body">
+            <h5 class="card-title">책 제목 3</h5>
+            <p class="card-text">책 설명이 여기에 들어갑니다.</p>
+            <a href="#" class="btn btn-primary">구매하기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>

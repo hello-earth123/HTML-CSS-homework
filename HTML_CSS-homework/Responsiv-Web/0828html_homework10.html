@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <title>Document</title>
+  <style>
+    img {
+      height: 180px;
+      width: 180px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- 주목 상품 & 카테고리 -->
+    <div class="row">
+      <!-- 주목 상품 -->
+      <!-- 
+        col-12: 992px 미만일 때는 12칸을 차지
+        col-lg-9: 992px 이상일 때는 9칸을 차지
+      -->
+      <div class="col-12 col-lg-9">
+        <h2>주목 상품</h2>
+        <div>
+          <img src="assets/product1.jpg" alt="product1">
+          <h4>상품 1</h4>
+          <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisque auctor eu felis at tristique.</div>
+        </div>
+        <div>
+          <img src="assets/product2.jpg" alt="product2">
+          <h4>상품 2</h4>
+          <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisque auctor eu felis at tristique.</div>
+        </div>
+        <div>
+          <img src="assets/product3.jpg" alt="product3">
+          <h4>상품 3</h4>
+          <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisque auctor eu felis at tristique.</div>
+        </div>
+      </div>
+
+      <!-- 카테고리 -->
+      <!-- 
+        col-lg-3: 992px 이상일 때는 3칸을 차지
+        d-none: 기본적으로 숨김(992px 미만일 때는 화면에 표시되지 않음)
+        d-lg-block: 992px 이상일 때 블록 요소로 표시
+      -->
+      <div class="col-lg-3 d-none d-lg-block">
+        <h2>카테고리</h2>
+        <ul>
+          <li>카테고리 1</li>
+          <li>카테고리 2</li>
+          <li>카테고리 3</li>
+          <li>카테고리 4</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 인기 상품 & 신상품 & 특별 할인 -->
+    <!-- 
+      col-12: 768px 미만일 때는 12칸을 차지
+      col-md-10, offset-md-2: 768px 이상, 992px 미만일 때는 10칸을 차지, 좌측에 2칸 만큼의 여백
+      col-lg-4, offset-lg-0: 992px 이상일 때는 4칸을 차지(offset 0으로 설정하지 않으면 md의 2가 계속 적용)
+    -->
+    <div class="row mt-3">
+      <!-- 인기 상품 -->
+      <div class="col-12 col-md-10 offset-md-2 col-lg-4 offset-lg-0">
+        <h2>인기 상품</h2>
+        <div>
+          <img src="assets/product4.jpg" alt="product4">
+          <h4>상품 4</h4>
+          <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisque auctor eu felis at tristique.</div>
+        </div>
+        <div>
+          <img src="assets/product5.jpg" alt="product5">
+          <h4>상품 5</h4>
+          <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisque auctor eu felis at tristique.</div>
+        </div>
+      </div>
+
+      <!-- 신상품 -->
+      <div class="col-12 col-md-10 offset-md-2 col-lg-4 offset-lg-0">
+        <h2>신상품</h2>
+        <div>
+          <img src="assets/product6.jpg" alt="product6">
+          <h4>상품 6</h4>
+          <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisque auctor eu felis at tristique.</div>
+        </div>
+        <div>
+          <img src="assets/product7.jpg" alt="product7">
+          <h4>상품 7</h4>
+          <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisque auctor eu felis at tristique.</div>
+        </div>
+      </div>
+
+      <!-- 특별 할인 -->
+      <div class="col-12 col-md-10 offset-md-2 col-lg- 4 offset-lg-0">
+        <h2>특별 할인</h2>
+        <div>
+          <img src="assets/product8.jpg" alt="product8">
+          <h4>상품 8</h4>
+          <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisque auctor eu felis at tristique.</div>
+        </div>
+        <div>
+          <img src="assets/product9.jpg" alt="product9">
+          <h4>상품 9</h4>
+          <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisque auctor eu felis at tristique.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
